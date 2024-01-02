@@ -32,11 +32,30 @@ Dan verwijder ik de map `project` en lees ik de `README_project.md` om te zien w
 
 
 # Eerste test
-Om te zien of alles gewerkt heeft, kan je de volgende commando uitvoeren: `npm run dev`.
+Om te zien of alles gewerkt heeft, kan je de volgende commando uitvoeren:
+```
+npm run dev
+```
 Indien dit niet werkt en je de volgende error krijgt: </br>
 `Node.js v18.14.0 is not supported by Astro!
 Please upgrade Node.js to a supported version: ">=18.14.1"`</br>
-Dan moet je eerst nog je node.js updaten.
+Dan moet je je node.js updaten. Hoe je dit doet, kan je hieronder lezen.
 
 ## Node.js updaten/installeren (optioneel)
-Om je node.js te updaten, kan je de volgende commando's uitvoeren: `nvm install v18.14.1` en daarna `nvm use v18.14.1`
+Om je node.js te updaten, kan je de volgende commando's uitvoeren:
+```
+nvm install v18.14.1
+nvm use v18.14.1
+```
+
+Test dit met:
+```
+nvm list
+```
+Je zou moeten zien dat de versie `v18.14.1` nu op "current" staat. </br>
+> [!NOTE]
+> Het hoeft niet exact deze versie te zijn, maar het moet wel een versie zijn die hoger is dan `v18.14.0`. 
+
+
+# Implementatie TailwindCSS
+Voor de styling van de webshop gebruik ik TailwindCSS. Om deze te installeren voer je de volgende commando uit: `npx astro add tailwind`. De stappen en commando kan je ook hierin vinden: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro)
