@@ -58,4 +58,26 @@ Je zou moeten zien dat de versie `v18.14.1` nu op "current" staat. </br>
 
 
 # Implementatie TailwindCSS
-Voor de styling van de webshop gebruik ik TailwindCSS. Om deze te installeren voer je de volgende commando uit: `npx astro add tailwind`. De stappen en commando kan je ook hierin vinden: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro)
+Voor de styling van de webshop gebruik ik TailwindCSS. Om deze te installeren voer je de volgende commando uit:
+```
+npx astro add tailwind
+```
+Er worden weer een aantal vragen gesteld die je moet beantwoorden. Hier heb ik even de antwoorden opgesomd die ik heb gegeven.
+
+1. "Astro will run the following commands: <br/>
+    npm install @astrojs/tailwind tailwindcss@^3.0.24 &nbsp; Continue?"<br/>
+    Hier kies je voor `Yes`.
+
+2. "Astro will generate a minimal ;/tailwind.config.mjs file. &nbsp; Continue?" <br/>
+    Hier kies je voor `Yes`.
+
+3. "Astro will make the following changes to your config file: astro.config.mjs
+    &nbsp; Continue?" <br/>
+    Hier kies je voor `Yes`.
+
+De stappen en commando kan je ook hierin vinden: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro).<br/>
+Je kan heel gemakkelijk testen of TailwindCSS werkt door in je code tekst een kleur te geven zoals text-red-500. Als je dit ziet, dan werkt het.
+
+
+
+
