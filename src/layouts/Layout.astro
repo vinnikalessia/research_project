@@ -2,7 +2,27 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const { title } = Astro.props;
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions, fade } from 'astro:transitions';
+
+const anim = {
+  old: {
+    name: 'fadeIn',
+    duration: '0.2s',
+    easing: 'linear',
+    fillMode: 'forwards',
+  },
+  new: {
+    name: 'fadeOut',
+    duration: '0.3s',
+    easing: 'linear',
+    fillMode: 'backwards',
+  }
+};
+
+const myFade = {
+  forwards: anim,
+  backwards: anim,
+};
 ---
 <html lang="en">
   <head>
@@ -11,11 +31,12 @@ import { ViewTransitions } from 'astro:transitions';
 	<title>{title}</title>
 	<ViewTransitions />
 </head>
-<body>
+<!-- <body transition:animate="none"> -->
+<body transition:animate={myFade}>
 	<Header title={title}/>
-    <article class="h-screen bg-neutral-white text-neutral-black px-8 py-6">
+    <div transition:animate="slide" class="h-screen bg-neutral-white text-neutral-black px-8 py-6">
       <slot />
-    </article>
+    </div>
     <Footer />
   </body>
 </html>
