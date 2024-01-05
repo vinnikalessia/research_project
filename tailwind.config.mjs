@@ -6,13 +6,15 @@ export default {
       colors: {
         primary: {
           200: '#9F004E',
+          400: '#8A0245',
           500: '#74043B',
+          600: '#620431',
         },
         secondary: {
-          500: '#D94B4C',
+          500: '#FEB95F',
         },
         tertiary: {
-          500: '#F29863',
+          500: '#000000',
         },
         neutral: {
           black: '#3A3042',
