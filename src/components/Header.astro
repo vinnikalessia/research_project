@@ -1,5 +1,6 @@
 ---
-
+const currentPath = Astro.url.pathname
+console.log('current on: ' + currentPath)
 ---
 
 <header
@@ -7,7 +8,10 @@
 >
   <nav class="flex items-center justify-between w-full">
     <div class="flex justify-between items-center w-fit">
-      <a href="/" class="flex items-center">
+      <a
+        href="/"
+        class="flex items-center focus-visible:ring-2 outline-none focus-visible:ring-primary-200 focus-visible:rounded-md"
+      >
         <img
           src="../../logo.svg"
           class="border-primary-200 border-1.8 rounded-full"
@@ -18,12 +22,26 @@
         </div>
       </a>
       <nav class="grid grid-cols-2 gap-10 text-lg ml-20">
-        <a href="/">Home</a>
-        <a href="/Ontdek">Ontdek</a>
+        <a
+          href="/"
+          class={`flex justify-center items-center px-1 focus-visible:ring-2 outline-none focus-visible:ring-primary-200 focus-visible:rounded-md ${
+            currentPath === '/' ? 'underline' : ''
+          }`}>Home</a
+        >
+        <a
+          href="/Ontdek"
+          class={`flex justify-center items-center px-1 focus-visible:ring-2 outline-none focus-visible:ring-primary-200 focus-visible:rounded-md ${
+            currentPath === '/Ontdek' ? 'underline' : ''
+          }`}>Ontdek</a
+        >
       </nav>
     </div>
-    <div>
-      <a href="/Winkelmand">
+    <div
+      class={currentPath === '/Winkelmand'
+        ? 'border-b-2 border-white'
+        : 'border-b-2 border-white border-opacity-0'}
+    >
+      <a href="/Winkelmand" class="p-2 pt-2.5 focus-visible:ring-2 outline-none focus-visible:ring-primary-200 focus-visible:rounded-md">
         <i class="fas fa-shopping-bag text-2xl"></i>
       </a>
     </div>

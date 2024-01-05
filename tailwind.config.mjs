@@ -20,7 +20,10 @@ export default {
         },
       },
       borderWidth: {
-        1.8: '1.8px',
+        1.8: '0.1125rem',
+      },
+      padding: {
+        2.5: '0.625rem',
       },
     },
   },
