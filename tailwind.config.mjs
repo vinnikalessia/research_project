@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: {
+          200: '#9F004E',
           500: '#74043B',
         },
         secondary: {
@@ -17,6 +18,9 @@ export default {
           black: '#3A3042',
           white: '#FEFDFE',
         },
+      },
+      borderWidth: {
+        1.8: '1.8px',
       },
     },
   },

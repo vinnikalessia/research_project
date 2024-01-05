@@ -9,9 +9,11 @@ export const data = {
 ---
 
 <Layout title="Home">
-  <h1>Hier komen alle boeken</h1>
-  <a href="/Detailboek">detail van dit boek</a>
-  <div>
+  <div class="">
+    <h1 class="font-bold text-xl">We give you the best reading experience</h1>
+	<div class="bg-pink-400 h-16 w-16 rounded-full"></div>
+  </div>
+  <div class="bg-yellow-200">
     <ul>
       {
         data.books.map((book: Book, index: number) => (
@@ -30,4 +32,23 @@ export const data = {
       }
     </ul>
   </div>
+  <!-- <div>
+    <ul>
+      {
+        data.books.map((book: Book, index: number) => (
+          <li {...{ key: index }}>
+            <strong>{book.title}</strong> by {book.author}
+            <a href={`/book/${book.slug}`}>
+              <img
+                src={book.img}
+                alt=""
+                class="w-auto h-56"
+                transition:name={book.slug}
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div> -->
 </Layout>

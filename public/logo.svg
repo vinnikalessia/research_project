@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="63.857" height="63.947" viewBox="0 0 63.857 63.947">
     <g id="icon_uil" data-name="icon uil" transform="translate(-208 -443.188)">
-      <circle id="bg" cx="31.929" cy="31.929" r="31.929" transform="translate(208 443.188)" fill="none"/>
+      <circle id="bg" cx="31.929" cy="31.929" r="31.929" transform="translate(208 443.188)" fill="#74043b"/>
       <g id="body" transform="translate(220.164 483.282)">
         <g id="body-2" data-name="body" transform="translate(-0.083 -0.011) rotate(-0.4)">
           <path id="links_body" data-name="links body" d="M0,16.937,4.888,0h15.49V23.82q-.271,0-.543,0A31.868,31.868,0,0,1,0,16.937Z" transform="translate(0 0.04)" fill="#9f004e"/>
