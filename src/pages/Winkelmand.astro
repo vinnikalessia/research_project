@@ -1,6 +1,55 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
+import { books } from '../api/api.json'
+import type { Book } from '../interfaces/book'
+
+export const data = {
+  books: books as Book[],
+}
 ---
+
 <Layout title="Home">
-  <p>Winkelmandje</p>
+  <div class="px-52 pt-10 pb-12 bg-tertiary-500 min-h-screen">
+    <div class="grid grid-cols-4 gap-y-24 w-full divide-x divide-gray-500">
+      <div class="col-span-3">
+        <h1 class="text-2xl font-bold mb-6">Je winkelmand</h1>
+        <div class="grid grid-cols-4 text-lg font-semibold place-items-center">
+          <p>Boek</p>
+          <p>Auteur</p>
+          <p>Prijs</p>
+          <p>Verwijderen</p>
+        </div>
+        <div class="grid grid-cols-4 place-items-center">
+          {
+            data.books.map((book: Book, index: number) => (
+                <a
+                  class="flex justify-start pl-8 py-4"
+                  href={`/book/${book.slug}`}
+                >
+                  <img
+                    src={book.img}
+                    alt=""
+                    class="w-auto h-36 self-center"
+                    transition:name={book.slug}
+                  />
+                </a>
+                <div class="px-2 pt-2">
+                  <p class="font-bold" transition:name={book.title}>
+                    {book.title}
+                  </p>
+                  <p transition:name={book.author}>{book.author}</p>
+                </div>
+                <div>{book.price}</div>
+                <i class="fas fa-trash text-neutral-black text-2xl"></i>
+              </>
+            ))
+          }
+        </div>
+      </div>
+      <div class="pl-4">
+        <h2 class="text-xl font-bold">Product</h2>
+        <p class="text-xl font-bold">Prijs</p>
+      </div>
+    </div>
+  </div>
 </Layout>
