@@ -7,7 +7,8 @@
       "author": "James Norbury",
       "description": "Op een dag hoort de Kat over een eenzame oude dennenboom diep in het woud. Wie de boom vindt, verkrijgt oneindige wijsheid. De Kat gaat op weg en ontmoet allerlei dieren, zoals de nieuwsgierige Haas, de praatgrage Aap en de vermoeide Schildpad. Elk vertellen zij hun eigen verhaal. Maar pas als de Kat een speelse kitten leert kennen, begrijpt hij het doel van zijn reis...",
       "price": 20.99,
-      "slug": "de-reis-van-de-wijze-kat"
+      "slug": "de-reis-van-de-wijze-kat",
+      "authorslug": "james-norbury"
     },
     {
       "id": 2,
@@ -16,16 +17,18 @@
       "author": "Lieven Scheire",
       "description": "Zal jij ooit aan je huiscomputer vragen wat je moet aantrekken voor een bepaalde gelegenheid? De kans is groot. Zullen rechters zich ooit laten adviseren door Artificiële Intelligentie om een strafmaat te bepalen? Ja, en wel binnenkort. En zal jij persoonlijk bereid zijn een AI-systeem te gehoorzamen? Dat doe je nu al wanneer je naar Spotify luistert, een Waze-route volgt of de spam uit je mails laat filteren. Er valt haast niet meer te ontkomen aan Artificiële Intelligentie. Maar wat is het juist? Wat willen we ermee doen en hoe zal onze toekomst eruit zien met AI? Lieven Scheire doet op heldere en entertainende wijze alles uit de doeken over deze nieuwe vorm van software die computers en apps vaardigheden geeft die ze tot nu toe nooit hadden.",
       "price": 24.99,
-      "slug": "ai"
+      "slug": "ai",
+      "authorslug": "lieven-scheire"
     },
     {
       "id": 3,
       "title": "Reünie",
       "img": "../Reunie.jpg",
-      "author": "Jonas Boets, Pieter Aspe",
+      "author": "Jonas Boets",
       "description": "Tijdens een reünie in het Brugse Sint-Lodewijkscollege wordt een priester-leraar dood aangetroffen in zijn klaslokaal. De jonge commissaris Pieter Van In gelooft niet in de theorie van misbruik en wraak. Samen met zijn onafscheidelijke collega Guido Versavel graaft hij dieper in het verleden van de aanwezigen op de reünie. Ze komen steeds meer te weten over wat zich tien jaar geleden heeft afgespeeld op de school, en welke trauma’s dat heeft veroorzaakt. Zijn superieuren waarderen Van Ins onconventionele methoden allerminst, maar hij moet uitzoeken wie de dader is voor er weer een dode valt.",
       "price": 22.5,
-      "slug": "reunie"
+      "slug": "reunie",
+      "authorslug": "jonas-boets"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "author": "Roald Dahl",
       "description": "Wonka is het fantastische verhaal over de grootste uitvinder, goochelaar en chocolademaker ter wereld – de man die we nu allemaal kennen als de geweldige Willie Wonka. Gebaseerd op de film Wonka van Warner Bros. Pictures, bedacht door Paul King die samen met Simon Farnaby het scenario schreef. Het hartverwarmende en humoristische Wonka is een verrukkelijke mix van magie en muziek, opwinding en ontroering, waarin de lezer kennismaakt met de jonge Willie Wonka, die choc-vol ideeën zit en vastbesloten is om de wereld hapje voor hapje te veranderen. Dit verhaal is het bewijs dat de mooiste dingen in het leven beginnen met een droom. En dat als je het geluk hebt om Willie Wonka te ontmoeten, alles mogelijk is.",
       "price": 19.99,
-      "slug": "wonka"
+      "slug": "wonka",
+      "authorslug": "roald-dahl"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "author": "Corina Bomann",
       "description": "Berlijn-Zehlendorf, 1939. De Tweede Wereldoorlog is uitgebroken en de artsen en verpleegkundigen van het Waldfriede-ziekenhuis moeten alles op alles zetten om hun patiënten te beschermen en de rust te bewaren. De jonge arts-assistent Helene worstelt met haar dagelijkse werk, omdat het hoofd chirurgie een overtuigd nationaal­socialist is. In de tuinen van de kliniek komt ze tot rust en daar ontmoet ze tuinman Timo, met wie ze al snel een hechte vriendschap opbouwt. Maar op het moment dat hun gevoelens voor elkaar steeds sterker worden, wordt Timo opgeroepen voor militaire dienst. Zowel het gescheiden zijn van Timo als haar ontdekking dat er nog iemand is die zich tot haar aangetrokken voelt, maakt dat Helene diep in haar hart moet kijken om wijs te worden uit haar gevoelens. Maar als de eerste bommen op Berlijn en het Waldfriede-ziekenhuis dreigen te vallen, heeft ze heel andere zorgen.",
       "price": 22.99,
-      "slug": "Avondrood"
+      "slug": "avondrood",
+      "authorslug": "corina-bomann"
     }
   ]
 }

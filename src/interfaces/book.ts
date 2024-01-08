@@ -6,4 +6,5 @@ export interface Book {
   description: string
   price: number
   slug: string
+  authorslug: string
 }

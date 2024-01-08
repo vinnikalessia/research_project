@@ -1,0 +1,39 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "img": "../james_norbury.jpg",
+      "name": "James Norbury",
+      "info": "James Norbury is een kinderboekenauteur van Zuid-Wales. Hij is vooral gekend om ‘Grote Panda & Kleine Draak’ en ‘De reis van Grote Panda en Kleine Draak’.",
+      "slug": "james-norbury"
+    },
+    {
+      "id": 2,
+      "img": "../lieven_scheire.jpg",
+      "name": "Lieven Scheire",
+      "info": "Lieven Scheire is een Belgische wetenschapper, televisiepresentator en cabaretier, geboren op 3 mei 1981. Hij staat bekend om zijn enthousiasme voor wetenschap en technologie en heeft als doel complexe onderwerpen op een toegankelijke en humoristische manier te presenteren aan het brede publiek. Scheire is regelmatig te zien op televisie, waar hij wetenschappelijke concepten uitlegt of deelneemt aan programma's rond wetenschap en technologie. Naast zijn televisiewerk heeft Lieven Scheire ook een achtergrond in de fysica en werkte hij enige tijd als onderzoeker aan de Universiteit Gent. Zijn passie voor wetenschap combineert hij met zijn talent voor entertainment, wat hem geliefd maakt bij een breed publiek in België en Nederland.",
+      "slug": "lieven-scheire"
+    },
+    {
+      "id": 3,
+      "img": "../jonas_boets.png",
+      "name": "Jonas Boets",
+      "info": "Jonas Boets is een Vlaamse schrijver, geboren op 5 augustus 1978. Hij is vooral bekend om zijn werk als auteur van jeugdboeken en young adult fiction. Boets heeft verschillende boeken op zijn naam staan die populair zijn bij jonge lezers. Zijn verhalen kenmerken zich vaak door een combinatie van spanning, avontuur en humor. Naast zijn schrijfwerk is Boets ook actief als scenarist en theatermaker. Zijn diverse talenten maken hem een veelzijdige en gewaardeerde auteur in de Vlaamse literatuur voor jongeren.",
+      "slug": "jonas-boets"
+    },
+    {
+      "id": 4,
+      "img": "../roald_dahl.jpg",
+      "name": "Roald Dahl",
+      "info": "Roald Dahl was een Britse schrijver die zowel kinderboeken als boeken voor volwassenen schreef. Hij is de auteur van iconische boeken als ‘De GVR’, ‘Matilda’, ‘De heksen’, ‘De fantastische meneer Vos’, ‘Sjakie en de chocoladefabriek’ en ‘De Gremlins’. Meerdere van zijn bestsellers werden verfilmd met sterren als Johnny Depp en Christopher Lee in de hoofdrol. Dahl werd geboren in Llandaff (Wales) als kind van Noorse ouders.",
+      "slug": "roald-dahl"
+    },
+    {
+      "id": 5,
+      "img": "../corina_bomann.jpg",
+      "name": "Corina Bomann",
+      "info": "Corina Bomann is een Duitse schrijfster van romans. Ze debuteerde in 2001 met ‘Der Schattengeist’. Bomann is vooral gekend om de boekenreeksen ‘De vrouwen van de Leeuwenhof’ en ‘De kleuren van schoonheid’. In de eerstgenoemde reeks verschenen ‘Agneta’s erfenis’, ‘Mathilda’s geheim’ en ‘Solveigs belofte’. In ‘De kleuren van schoonheid’ verschenen ‘Sophia’s hoop’, ‘Sophia’s wens’ en ‘Sophia’s triomf’. Andere bekende boeken zijn ‘Avondrood’, ‘Een kamer aan zee’ en ‘De maneschijnsonate’. Haar boeken werden reeds in meer dan 20 talen vertaald.",
+      "slug": "corina-bomann"
+    }
+  ]
+}
