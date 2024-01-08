@@ -14,7 +14,7 @@ export default {
           500: '#FEB95F',
         },
         tertiary: {
-          500: '#000000',
+          500: '#FEDAC2',
         },
         neutral: {
           black: '#3A3042',
