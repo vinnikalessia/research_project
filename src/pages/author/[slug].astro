@@ -4,6 +4,7 @@ import { authors } from '../../api/author.json';
 import type { Author } from '../../interfaces/author';
 import { books } from '../../api/api.json';
 import type { Book } from '../../interfaces/book';
+import { fade } from 'astro:transitions';
 
 export async function getStaticPaths() {
   return authors.map((author: Author) => {
@@ -24,7 +25,7 @@ export async function getStaticPaths() {
 const { author, boeken } = Astro.props;
 
 ---
-<Layout title="Detail boek" transition:animate="slide">
+<Layout title="Detail boek">
 	<div class="px-32 pt-6">
 		<button onclick="window.history.back()">
 			<i class="fas fa-arrow-left text-neutral-white text-2xl"></i>
@@ -36,7 +37,7 @@ const { author, boeken } = Astro.props;
             <p transition:name={author.info} class="text-xl text-neutral-white w-[40rem]">{author.info}</p>
         </div>
         <div class="flex justify-center">
-            <img class="h-96" src={author.img} alt="boek 1" transition:name={author.slug}>
+            <img class="h-96" src={author.img} transition:animate={fade({ duration: '.8s' })} alt="boek 1" transition:name={author.slug}>
         </div>
 	</div>
     <div class="px-52 pb-12">

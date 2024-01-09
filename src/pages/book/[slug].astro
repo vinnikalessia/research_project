@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { books } from '../../api/api.json';
 import type { Book } from '../../interfaces/book';
 
+
 export async function getStaticPaths() {
 
 	return books.map((book: Book) => {
