@@ -40,7 +40,7 @@ const { book } = Astro.props
       >
     </div>
     <div class="flex justify-center">
-        <div transition:name="play">
+        <div transition:animate="slide" transition:name="play">
             <video
               class="w-auto h-56 self-center"
               autoplay
@@ -53,7 +53,7 @@ const { book } = Astro.props
     </div>
   </div>
   <div class="px-52 pb-12">
-    <p transition:name={book.description} class="text-xl text-neutral-white">
+    <p transition:animate="slide" transition:name={book.description} class="text-xl text-neutral-white">
       {book.description}
     </p>
   </div>
