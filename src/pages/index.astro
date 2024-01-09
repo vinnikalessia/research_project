@@ -48,23 +48,17 @@ export const data = {
       <h1 class="text-4xl font-bold">Specials deze week</h1>
       {
         data.books[4] && (
-          <div
-            class="flex justify-around items-center mt-12"
-          >
-            <video
-              class="w-auto h-40 self-center"
-              autoplay
-              muted
-              transition:persist="video"
-            >
-              <source src="../../public/wonka.mp4" type="video/mp4" />
-            </video>
-            <img
-              src={data.books[4].img}
-              alt=""
-              class="w-auto h-40 self-center"
-              transition:name={data.books[4].slug}
-            />
+          <div class="flex justify-around items-center mt-12">
+            <div transition:name="play">
+              <video
+                class="w-auto h-40 self-center"
+                autoplay
+                muted
+                transition:persist="video"
+              >
+                <source src="../../public/wonka.mp4" type="video/mp4" />
+              </video>
+            </div>
             <div class="px-10 pt-2">
               <p
                 class="font-bold text-3xl"
@@ -76,7 +70,10 @@ export const data = {
                 {data.books[4].author}
               </p>
             </div>
-            <a href={`/special/${data.books[4].slug}`} class="flex justify-center gap-2 bg-secondary-500 rounded-md w-fit h-fit p-4 items-center">
+            <a
+              href={`/special/${data.books[4].slug}`}
+              class="flex justify-center gap-2 bg-secondary-500 rounded-md w-fit h-fit p-4 items-center"
+            >
               <p>Bekijk hier</p>
               <i class="fas fa-chevron-right" />
             </a>

@@ -40,14 +40,16 @@ const { book } = Astro.props
       >
     </div>
     <div class="flex justify-center">
-      <video
-        class="w-auto h-56 self-center"
-        autoplay
-        muted
-        transition:persist="video"
-      >
-        <source src="../../public/wonka.mp4" type="video/mp4" />
-      </video>
+        <div transition:name="play">
+            <video
+              class="w-auto h-56 self-center"
+              autoplay
+              muted
+              transition:persist="video"
+            >
+              <source src="../../public/wonka.mp4" type="video/mp4" />
+            </video>
+        </div>
     </div>
   </div>
   <div class="px-52 pb-12">
