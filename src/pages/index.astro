@@ -35,11 +35,53 @@ export const data = {
               transition:name={book.slug}
             />
             <div class="px-10 pt-2">
-              <p class="font-bold" transition:name={book.title}>{book.title}</p>
+              <p class="font-bold" transition:name={book.title}>
+                {book.title}
+              </p>
               <p transition:name={book.author}>{book.author}</p>
             </div>
           </a>
         ))
+      }
+    </div>
+    <div class="mt-24 mx-40 mb-6">
+      <h1 class="text-4xl font-bold">Specials deze week</h1>
+      {
+        data.books[4] && (
+          <div
+            class="flex justify-around items-center mt-12"
+          >
+            <video
+              class="w-auto h-40 self-center"
+              autoplay
+              muted
+              transition:persist="video"
+            >
+              <source src="../../public/wonka.mp4" type="video/mp4" />
+            </video>
+            <img
+              src={data.books[4].img}
+              alt=""
+              class="w-auto h-40 self-center"
+              transition:name={data.books[4].slug}
+            />
+            <div class="px-10 pt-2">
+              <p
+                class="font-bold text-3xl"
+                transition:name={data.books[4].title}
+              >
+                {data.books[4].title}
+              </p>
+              <p class="text-lg" transition:name={data.books[4].author}>
+                {data.books[4].author}
+              </p>
+            </div>
+            <a href={`/special/${data.books[4].slug}`} class="flex justify-center gap-2 bg-secondary-500 rounded-md w-fit h-fit p-4 items-center">
+              <p>Bekijk hier</p>
+              <i class="fas fa-chevron-right" />
+            </a>
+          </div>
+        )
       }
     </div>
   </div>

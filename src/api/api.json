@@ -32,16 +32,6 @@
     },
     {
       "id": 4,
-      "title": "Wonka",
-      "img": "../Wonka.jpg",
-      "author": "Roald Dahl",
-      "description": "Wonka is het fantastische verhaal over de grootste uitvinder, goochelaar en chocolademaker ter wereld – de man die we nu allemaal kennen als de geweldige Willie Wonka. Gebaseerd op de film Wonka van Warner Bros. Pictures, bedacht door Paul King die samen met Simon Farnaby het scenario schreef. Het hartverwarmende en humoristische Wonka is een verrukkelijke mix van magie en muziek, opwinding en ontroering, waarin de lezer kennismaakt met de jonge Willie Wonka, die choc-vol ideeën zit en vastbesloten is om de wereld hapje voor hapje te veranderen. Dit verhaal is het bewijs dat de mooiste dingen in het leven beginnen met een droom. En dat als je het geluk hebt om Willie Wonka te ontmoeten, alles mogelijk is.",
-      "price": 19.99,
-      "slug": "wonka",
-      "authorslug": "roald-dahl"
-    },
-    {
-      "id": 5,
       "title": "Avondrood",
       "img": "../Avondrood.jpg",
       "author": "Corina Bomann",
@@ -49,6 +39,16 @@
       "price": 22.99,
       "slug": "avondrood",
       "authorslug": "corina-bomann"
+    },
+    {
+      "id": 5,
+      "title": "Wonka",
+      "img": "../Wonka.jpg",
+      "author": "Roald Dahl",
+      "description": "Wonka is het fantastische verhaal over de grootste uitvinder, goochelaar en chocolademaker ter wereld – de man die we nu allemaal kennen als de geweldige Willie Wonka. Gebaseerd op de film Wonka van Warner Bros. Pictures, bedacht door Paul King die samen met Simon Farnaby het scenario schreef. Het hartverwarmende en humoristische Wonka is een verrukkelijke mix van magie en muziek, opwinding en ontroering, waarin de lezer kennismaakt met de jonge Willie Wonka, die choc-vol ideeën zit en vastbesloten is om de wereld hapje voor hapje te veranderen. Dit verhaal is het bewijs dat de mooiste dingen in het leven beginnen met een droom. En dat als je het geluk hebt om Willie Wonka te ontmoeten, alles mogelijk is.",
+      "price": 19.99,
+      "slug": "wonka",
+      "authorslug": "roald-dahl"
     }
   ]
 }
