@@ -1,8 +1,8 @@
-br# Research project
+# Research project
 
 Hoe maak je een interactieve boekenwebshop met Astro en de View Transition API?
 
-# Installatie
+## Installatie
 
 ```
 npm create astro@latest
@@ -30,7 +30,7 @@ Voordat ik alles verzet naar de root folder `Research_project`, hernoem ik de RE
 
 Dan verwijder ik de map `project` en lees ik de `README_project.md` om te zien wat ik moet doen om de server te starten.
 
-# Eerste test
+## Eerste test
 
 Om te zien of alles gewerkt heeft, kan je de volgende commando uitvoeren:
 
@@ -43,7 +43,7 @@ Indien dit niet werkt en je de volgende error krijgt: </br>
 Please upgrade Node.js to a supported version: ">=18.14.1"`</br>
 Dan moet je je node.js updaten. Hoe je dit doet, kan je hieronder lezen.
 
-## Node.js updaten/installeren (optioneel)
+### Node.js updaten/installeren (optioneel)
 
 Om je node.js te updaten, kan je de volgende commando's uitvoeren:
 
@@ -63,7 +63,7 @@ Je zou moeten zien dat de versie `v18.14.1` nu op "current" staat. </br>
 > [!NOTE]
 > Het hoeft niet exact deze versie te zijn, maar het moet wel een versie zijn die hoger is dan `v18.14.0`.
 
-# Implementatie TailwindCSS
+## Implementatie TailwindCSS
 
 Voor de styling van de webshop gebruik ik TailwindCSS. Om deze te installeren voer je de volgende commando uit:
 
