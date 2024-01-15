@@ -7,7 +7,10 @@ export const data = {
   books: books as Book[],
 }
 
-const total = data.books.reduce((accumulator, book) => accumulator + book.price, 0);
+const total = data.books.reduce(
+  (accumulator, book) => accumulator + book.price,
+  0,
+)
 ---
 
 <Layout title="Home">
@@ -22,44 +25,50 @@ const total = data.books.reduce((accumulator, book) => accumulator + book.price,
           <p>Verwijderen</p>
         </div>
         <div class="grid grid-cols-4 place-items-center">
-          {data.books.map((book: Book, index: number) => (
-            <>
-              <a
-                class="flex justify-start pl-2 py-4"
-                href={`/book/${book.slug}`}
-              >
-                <img
-                  src={book.img}
-                  alt=""
-                  class="w-auto h-36 self-center"
-                  transition:name={book.slug}
-                />
-              </a>
-              <div class="px-2 pt-2">
-                <p class="font-bold" transition:name={book.title}>
-                  {book.title}
-                </p>
-                <p transition:name={book.author}>{book.author}</p>
-              </div>
-              <div>{book.price.toFixed(2)}</div>
-              <i class="fas fa-trash text-neutral-black text-2xl"></i>
-            </>
-          ))}
+          {
+            data.books.map((book: Book, index: number) => (
+              <>
+                <a
+                  class="flex justify-start pl-2 py-4"
+                  href={`/book/${book.slug}`}
+                >
+                  <img
+                    src={book.img}
+                    alt=""
+                    class="w-auto h-36 self-center"
+                    transition:name={book.slug}
+                  />
+                </a>
+                <div class="px-2 pt-2">
+                  <p class="font-bold" transition:name={book.title}>
+                    {book.title}
+                  </p>
+                  <p transition:name={book.author}>{book.author}</p>
+                </div>
+                <div>{book.price.toFixed(2)}</div>
+                <i class="fas fa-trash text-neutral-black text-2xl" />
+              </>
+            ))
+          }
         </div>
       </div>
       <div class="pl-4 flex flex-col">
         <p class="text-2xl font-bold mb-6 underline">Bestelling</p>
-        {data.books.map((book: Book, index: number) => (
-          <div class="flex justify-between py-1">
-            <p>{book.title}</p>
-            <p>€ {book.price.toFixed(2)}</p>
-          </div>
-        ))}
+        {
+          data.books.map((book: Book, index: number) => (
+            <div class="flex justify-between py-1">
+              <p>{book.title}</p>
+              <p>€ {book.price.toFixed(2)}</p>
+            </div>
+          ))
+        }
         <div class="flex justify-between py-1 divide-y divide-neutral-black">
           <p>totaal</p>
           <p>€ {total.toFixed(2)}</p>
         </div>
-        <button class="mt-12 flex justify-center gap-2 bg-secondary-500 rounded-md w-fit px-4 items-center">
+        <button
+          class="mt-12 flex justify-center gap-2 bg-secondary-500 rounded-md w-fit px-4 items-center"
+        >
           <p>betaal</p>
           <i class="fas fa-chevron-right"></i>
         </button>
