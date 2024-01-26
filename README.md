@@ -45,6 +45,8 @@ Dan moet je je node.js updaten. Hoe je dit doet, kan je hieronder lezen.
 
 ### Node.js updaten/installeren (optioneel)
 
+Het kan zijn dat je Nodejs op je laptop geïnstalleerd staat tussen alle apps
+en hoef je die alleen te verwijderen en een nieuwere versie te installeren.
 Om je node.js te updaten, kan je de volgende commando's uitvoeren:
 
 ```
