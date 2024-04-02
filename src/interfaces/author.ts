@@ -4,5 +4,6 @@ export interface Author {
     name: string
     info: string
     slug: string
+    bron: string
   }
   

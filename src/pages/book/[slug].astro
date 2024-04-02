@@ -1,42 +1,59 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { books } from '../../api/api.json';
-import type { Book } from '../../interfaces/book';
-
+import Layout from '../../layouts/Layout.astro'
+import { books } from '../../api/api.json'
+import type { Book } from '../../interfaces/book'
 
 export async function getStaticPaths() {
-
-	return books.map((book: Book) => {
-		return {
-			params: {
-				slug: book.slug
-			},
-			props: {
-				book
-			}
-		}
-	});
+  return books.map((book: Book) => {
+    return {
+      params: {
+        slug: book.slug,
+      },
+      props: {
+        book,
+      },
+    }
+  })
 }
 
-const { book } = Astro.props;
-
+const { book } = Astro.props
 ---
+
 <Layout title="Detail boek">
-	<div class="px-32 pt-6">
-		<button onclick="window.history.back()">
-			<i class="fas fa-arrow-left text-neutral-white text-2xl"></i>
-		</button>
-	</div>
-	<div class="px-52 pt-10 pb-16 flex justify-around items-center text-neutral-white">
-		<div class="flex flex-col justify-center items-center">
-			<h1 transition:name={book.title} class="text-4xl font-bold">{book.title}</h1>
-			<a href={`/author/${book.authorslug}`} transition:name={book.author} class="text-2xl text-secondary-500 underline underline-offset-4">{book.author}</a>
-		</div>
-		<div class="flex justify-center">
-			<img class="w-auto h-96" src={book.img} alt="boek 1" transition:name={book.slug}>
-		</div>
-	</div>
-	<div class="px-52 pb-12">
-		<p transition:name={book.description} class="text-xl text-neutral-white">{book.description}</p>
-	</div>
+  <div class="px-32 pt-6">
+    <button onclick="window.history.back()">
+      <i class="fas fa-arrow-left text-neutral-white text-2xl"></i>
+    </button>
+  </div>
+  <div
+    class="px-52 pt-10 pb-10 flex justify-around items-center text-neutral-white"
+  >
+    <div class="flex flex-col justify-center items-center">
+      <h1 transition:name={book.title} class="text-4xl font-bold">
+        {book.title}
+      </h1>
+      <a
+        href={`/author/${book.authorslug}`}
+        transition:name={book.author}
+        class="text-2xl text-secondary-500 underline underline-offset-4"
+        >{book.author}</a
+      >
+    </div>
+    <div class="flex justify-center flex-col">
+      <img
+        class="w-auto h-96"
+        src={book.img}
+        alt="boek 1"
+        transition:name={book.slug}
+      />
+      <p class="text-white text-[10px] text-center opacity-65">
+        Afbeelding van Standaard Boekhandel
+      </p>
+    </div>
+  </div>
+  <div class="px-52 pb-12">
+    <p transition:name={book.description} class="text-xl text-neutral-white">
+      {book.description}
+    </p>
+  </div>
 </Layout>

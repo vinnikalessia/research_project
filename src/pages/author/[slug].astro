@@ -1,54 +1,82 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { authors } from '../../api/author.json';
-import type { Author } from '../../interfaces/author';
-import { books } from '../../api/api.json';
-import type { Book } from '../../interfaces/book';
-import { fade } from 'astro:transitions';
+import Layout from '../../layouts/Layout.astro'
+import { authors } from '../../api/author.json'
+import type { Author } from '../../interfaces/author'
+import { books } from '../../api/api.json'
+import type { Book } from '../../interfaces/book'
+import { fade } from 'astro:transitions'
 
 export async function getStaticPaths() {
   return authors.map((author: Author) => {
-    const authorBooks = books.filter((book: Book) => book.author === author.name);
+    const authorBooks = books.filter(
+      (book: Book) => book.author === author.name,
+    )
     return {
       params: {
-        slug: author.slug
+        slug: author.slug,
       },
       props: {
         author,
-        boeken: authorBooks
-      }
+        boeken: authorBooks,
+      },
     }
-  });
+  })
 }
 
-
-const { author, boeken } = Astro.props;
-
+const { author, boeken } = Astro.props
 ---
+
 <Layout title="Detail auteur">
-	<div class="px-32 pt-6">
-		<button onclick="window.history.back()">
-			<i class="fas fa-arrow-left text-neutral-white text-2xl"></i>
-		</button>
-	</div>
-	<div class="px-52 pt-10 pb-12 flex justify-between items-center text-neutral-white">
-        <div class="flex flex-col justify-center items-center">
-            <h1 transition:name={author.name} class="text-4xl font-bold mb-6">{author.name}</h1>
-            <p transition:name={author.info} class="text-xl text-neutral-white w-[40rem]">{author.info}</p>
-        </div>
-        <div class="flex justify-center">
-            <img class="h-96" src={author.img} transition:animate={fade({ duration: '.8s' })} alt="boek 1" transition:name={author.slug}>
-        </div>
-	</div>
-    <div class="px-52 pb-12">
-        <h1 class="text-2xl text-neutral-white font-bold mb-6">Enkele boeken van de auteur</h1>
-        <p>{
-            boeken.map((book: Book) => (
-              <div>
-                <h2 class="text-neutral-white">{book.title}</h2>
-                <img class="w-32 h-auto" src={book.img} alt={book.title} transition:name={book.slug} />
-              </div>
-            ))
-          }</p>
+  <div class="px-32 pt-6">
+    <button onclick="window.history.back()">
+      <i class="fas fa-arrow-left text-neutral-white text-2xl"></i>
+    </button>
+  </div>
+  <div
+    class="px-52 pt-10 pb-10 flex justify-between items-center text-neutral-white"
+  >
+    <div class="flex flex-col justify-center items-center">
+      <h1 transition:name={author.name} class="text-4xl font-bold mb-6">
+        {author.name}
+      </h1>
+      <p
+        transition:name={author.info}
+        class="text-xl text-neutral-white w-[40rem]"
+      >
+        {author.info}
+      </p>
     </div>
+    <div class="flex justify-center flex-col">
+      <img
+        class="h-96"
+        src={author.img}
+        transition:animate={fade({ duration: '.8s' })}
+        alt="boek 1"
+        transition:name={author.slug}
+      />
+      <p class="text-white text-[10px] text-center opacity-65">
+        Afbeelding van {author.bron}
+      </p>
+    </div>
+  </div>
+  <div class="px-52 pb-12">
+    <h1 class="text-2xl text-neutral-white font-bold mb-6">
+      Enkele boeken van de auteur
+    </h1>
+    <p>
+      {
+        boeken.map((book: Book) => (
+          <div>
+            <h2 class="text-neutral-white">{book.title}</h2>
+            <img
+              class="w-32 h-auto"
+              src={book.img}
+              alt={book.title}
+              transition:name={book.slug}
+            />
+          </div>
+        ))
+      }
+    </p>
+  </div>
 </Layout>
