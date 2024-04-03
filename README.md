@@ -20,7 +20,7 @@ En typ y om de installatie te laten starten. Dan komen er een aantal vragen die 
 
 5. "How strict should TypeScript be?" Hier kies je voor `Strict (recommended)`.
 
-6. "Initialize a new git repository? (optional)" Hier kies je voor `No` als je geen git repository hebt aangemaakt. In mijn geval had ik dat wel al gedaan.
+6. "Initialize a new git repository? (optional)" Ik koos voor `No` aangezien ik al een git repository had.
 
 Nadat de installatie gedaan is, zou je dit moeten zien: </br>
 ![folder na installatie](./photo/folder_bij_installatie.jpg)
