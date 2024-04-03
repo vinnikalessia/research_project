@@ -10,7 +10,7 @@ npm create astro@latest
 
 En typ y om de installatie te laten starten. Dan komen er een aantal vragen die je moet beantwoorden. Hier heb ik even de antwoorden opgesomd die ik heb gegeven.
 
-1. "Where should we create your new project?" Omdat Astro alleen in een lege mag een project kan maken, moet je een nieuwe map aanmaken of een bestaande lege ingeven. In mijn geval heb ik een nieuwe map aangemaakt met de naam `./project` omdat ik al een README.md file had.
+1. "Where should we create your new project?" Omdat Astro alleen in een lege map een project kan maken, moet je een nieuwe map aanmaken of een bestaande lege ingeven. In mijn geval heb ik een nieuwe map aangemaakt met de naam `./project` omdat ik al een README.md file had.
 
 2. "How would you like to start your project?" Hier kies je voor `Empty`.
 
