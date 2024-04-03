@@ -63,7 +63,7 @@ nvm list
 Je zou moeten zien dat de versie `v18.14.1` nu op "current" staat. </br>
 
 > [!NOTE]
-> Het hoeft niet exact deze versie te zijn, maar het moet wel een versie zijn die hoger is dan `v18.14.0`.
+> Het hoeft niet exact deze versie te zijn, maar het moet wel een versie zijn die hoger is dan `v18.14.1`.
 
 ## Implementatie TailwindCSS
 
